@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Страница не найдена — Victor DivePro</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#043974" />
+  <link rel="icon" href="/images/favico/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/images/favico/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favico/apple-touch-icon.png" />
+  <style>
+    @font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url('/fonts/manrope-cyrillic.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+    @font-face{font-family:'Manrope';font-style:normal;font-weight:200 800;font-display:swap;src:url('/fonts/manrope-latin.woff2') format('woff2');unicode-range:U+0000-00FF}
+    @font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/be-vietnam-pro-400-latin.woff2') format('woff2')}
+    @font-face{font-family:'Be Vietnam Pro';font-style:normal;font-weight:600;font-display:swap;src:url('/fonts/be-vietnam-pro-600-latin.woff2') format('woff2')}
+    :root{
+      --c-turq:#16b8c4; --coral:#ff7a59;
+      --ink:#f7f4ec; --ink-dim:rgba(247,244,236,.74); --ink-faint:rgba(247,244,236,.52);
+      --glass:rgba(247,244,236,.07); --glass-line:rgba(247,244,236,.16);
+      --font-display:'Manrope',system-ui,sans-serif; --font-body:'Be Vietnam Pro',system-ui,sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      min-height:100vh;display:flex;align-items:center;justify-content:center;
+      font-family:var(--font-body);color:var(--ink);text-align:center;
+      background:linear-gradient(180deg,#127280 0%,#084e68 35%,#042f4a 70%,#03141f 100%);
+      overflow:hidden;padding:24px;
+    }
+    .wrap{max-width:560px;position:relative;z-index:1}
+    .depth{font-family:var(--font-display);font-size:clamp(88px,18vw,160px);font-weight:800;line-height:1;
+      letter-spacing:.02em;background:linear-gradient(180deg,var(--ink) 20%,rgba(247,244,236,.25));
+      -webkit-background-clip:text;background-clip:text;color:transparent}
+    .tag{font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-faint);margin-top:6px}
+    h1{font-family:var(--font-display);font-size:clamp(20px,4vw,28px);font-weight:800;margin:18px 0 10px}
+    p{color:var(--ink-dim);font-size:15.5px;line-height:1.6}
+    .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+    a.btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14.5px;transition:transform .2s,box-shadow .2s}
+    a.primary{background:linear-gradient(135deg,var(--coral),#e9603e);color:#fff;box-shadow:0 8px 24px rgba(233,96,62,.35)}
+    a.ghost{border:1px solid var(--glass-line);background:var(--glass);color:var(--ink)}
+    a.btn:hover{transform:translateY(-2px)}
+    .bubble{position:fixed;bottom:-60px;border-radius:50%;border:1px solid rgba(247,244,236,.25);
+      background:radial-gradient(circle at 35% 30%,rgba(247,244,236,.18),transparent 60%);
+      animation:rise linear infinite;pointer-events:none}
+    .bubble:nth-child(1){left:12%;width:18px;height:18px;animation-duration:9s}
+    .bubble:nth-child(2){left:28%;width:10px;height:10px;animation-duration:13s;animation-delay:-4s}
+    .bubble:nth-child(3){left:55%;width:24px;height:24px;animation-duration:11s;animation-delay:-2s}
+    .bubble:nth-child(4){left:72%;width:8px;height:8px;animation-duration:15s;animation-delay:-7s}
+    .bubble:nth-child(5){left:88%;width:14px;height:14px;animation-duration:10s;animation-delay:-5s}
+    @keyframes rise{to{transform:translateY(-110vh)}}
+  </style>
+</head>
+<body>
+  <div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+  <div class="wrap">
+    <div class="depth">404</div>
+    <div class="tag">глубина не найдена</div>
+    <h1>Эта страница ушла на глубину</h1>
+    <p>Такого адреса на сайте нет — возможно, ссылка устарела или в ней опечатка.
+       Поднимайтесь на поверхность: всё про дайвинг, снорклинг и курсы — на главной.</p>
+    <div class="btns">
+      <a class="btn primary" href="/">На главную</a>
+      <a class="btn ghost" href="/#booking">Написать нам</a>
+    </div>
+  </div>
+</body>
+</html>
