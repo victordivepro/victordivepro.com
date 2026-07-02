@@ -28,10 +28,9 @@
     .page{max-width:760px;margin:0 auto;padding:48px 22px 80px}
     a{color:var(--c-turq)}
     header.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:44px}
-    .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
-    .logo img{width:46px;height:46px;border-radius:50%;object-fit:cover}
-    .logo b{font-family:var(--font-display);font-size:15px;letter-spacing:.06em}
-    .logo small{display:block;font-size:9px;font-weight:600;letter-spacing:.26em;color:var(--ink-faint);text-transform:uppercase}
+    .logo{display:flex;align-items:center;text-decoration:none;color:var(--ink);transition:transform .3s}
+    .logo:hover{transform:scale(1.05)}
+    .logo img{height:56px;width:auto;object-fit:contain;display:block;filter:drop-shadow(0 4px 12px rgba(2,15,28,.45))}
     a.back{font-size:13.5px;text-decoration:none;border:1px solid var(--glass-line);background:var(--glass);
       color:var(--ink);padding:9px 18px;border-radius:999px;white-space:nowrap}
     .kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-faint)}
@@ -46,13 +45,24 @@
     footer{margin-top:40px;text-align:center;font-size:13px;color:var(--ink-faint)}
     footer a{color:var(--ink-dim)}
   </style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109054362', 'ym');
+    ym(109054362, 'init', {ssr:true, webvisor:true, clickmap:true, referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/109054362" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body>
 <div class="page">
   <header class="top">
     <a class="logo" href="/">
-      <img src="/images/logo-oval.png" alt="Victor DivePro" />
-      <span><b>VICTOR&nbsp;DIVEPRO</b><small>Нячанг · Дайвинг</small></span>
+      <img src="/images/logo-oval.png" alt="Victor DivePro — Нячанг · Дайвинг" />
     </a>
     <a class="back" href="/">← На главную</a>
   </header>
