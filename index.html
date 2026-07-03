@@ -1519,6 +1519,16 @@
     ym(109054362, 'init', {ssr:true, webvisor:true, clickmap:true, referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/109054362" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<script type="text/javascript">
+// Цели Метрики: клики по кнопкам связи
+document.addEventListener('click', function(e){
+  var a = e.target.closest && e.target.closest('a'); if(!a) return;
+  var h = a.href || '', c = a.className || '';
+  if (h.indexOf('wa.me') > -1 || c.indexOf('js-wa') > -1) { ym(109054362,'reachGoal','wa_click'); }
+  else if (h.indexOf('t.me') > -1 || c.indexOf('js-tg') > -1) { ym(109054362,'reachGoal','tg_click'); }
+  else if (h.indexOf('instagram.com') > -1) { ym(109054362,'reachGoal','ig_click'); }
+}, true);
+</script>
 <!-- /Yandex.Metrika counter -->
 </head>
 <body>
