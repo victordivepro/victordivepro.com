@@ -159,8 +159,8 @@
       {
         "@type": "ImageObject",
         "@id": "https://victordivepro.com/#image-logo",
-        "url": "https://victordivepro.com/images/logo-oval.png",
-        "contentUrl": "https://victordivepro.com/images/logo-oval.png",
+        "url": "https://victordivepro.com/images/logo-oval.webp",
+        "contentUrl": "https://victordivepro.com/images/logo-oval.webp",
         "caption": "Victor DivePro logo"
       },
       {
@@ -176,8 +176,8 @@
       {
         "@type": "ImageObject",
         "@id": "https://victordivepro.com/#image-first-dive",
-        "url": "https://victordivepro.com/images/dive1.png",
-        "contentUrl": "https://victordivepro.com/images/dive1.png",
+        "url": "https://victordivepro.com/images/dive1.webp",
+        "contentUrl": "https://victordivepro.com/images/dive1.webp",
         "caption": "First dive in Nha Trang with fish and coral",
         "width": 1254,
         "height": 1254
@@ -185,8 +185,8 @@
       {
         "@type": "ImageObject",
         "@id": "https://victordivepro.com/#image-victor",
-        "url": "https://victordivepro.com/images/photos/diver-heart.jpg",
-        "contentUrl": "https://victordivepro.com/images/photos/diver-heart.jpg",
+        "url": "https://victordivepro.com/images/photos/diver-heart.webp",
+        "contentUrl": "https://victordivepro.com/images/photos/diver-heart.webp",
         "caption": "Victor with guests underwater in Nha Trang",
         "width": 2731,
         "height": 4096
@@ -1524,8 +1524,8 @@
 document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('a'); if(!a) return;
   var h = a.href || '', c = a.className || '';
-  if (h.indexOf('wa.me') > -1 || c.indexOf('js-wa') > -1) { ym(109054362,'reachGoal','wa_click'); }
-  else if (h.indexOf('t.me') > -1 || c.indexOf('js-tg') > -1) { ym(109054362,'reachGoal','tg_click'); }
+  if (h.indexOf('wa.me') > -1 || c.indexOf('js-wa') > -1) { ym(109054362,'reachGoal','wa_click'); ym(109054362,'reachGoal','lead'); }
+  else if (h.indexOf('t.me') > -1 || c.indexOf('js-tg') > -1) { ym(109054362,'reachGoal','tg_click'); ym(109054362,'reachGoal','lead'); }
   else if (h.indexOf('instagram.com') > -1) { ym(109054362,'reachGoal','ig_click'); }
 }, true);
 </script>
@@ -2097,8 +2097,8 @@ document.addEventListener('click', function(e){
   <a class="logo" href="#hero" aria-label="Victor DivePro — наверх">
     <span class="logo-mark">
       <picture>
-        <source media="(max-width: 640px)" srcset="images/logo-oval.png">
-        <img src="images/logo-oval.png" alt="Victor DivePro" width="1448" height="1086">
+        <source media="(max-width: 640px)" srcset="images/logo-oval.webp">
+        <img src="images/logo-oval.webp" alt="Victor DivePro" width="1448" height="1086">
       </picture>
     </span>
     <span class="logo-text">
@@ -2318,8 +2318,8 @@ document.addEventListener('click', function(e){
       <!-- ДАЙВИНГ -->
       <a class="svc-card" href="#programs" aria-label="Программы дайвинга">
         <picture>
-          <img src="images/dive1.png" alt="Дайвинг в Нячанге — дайвер среди рыб и кораллов" width="1254" height="1254"
-            loading="lazy" decoding="async">
+          <img src="images/dive1.webp" alt="Дайвинг в Нячанге — дайвер среди рыб и кораллов" width="1254" height="1254"
+            fetchpriority="high" decoding="async">
         </picture>
         <div class="svc-card-overlay"></div>
         <div class="svc-card-body">
@@ -2341,7 +2341,7 @@ document.addEventListener('click', function(e){
       <!-- СНОРКЛИНГ -->
       <a class="svc-card snork-svc" href="#snorkeling" aria-label="Снорклинг в Нячанге">
         <picture>
-          <img src="images/photos/snorkeling-card-reef.png" alt="Снорклинг над коралловым рифом" width="1369" height="1149"
+          <img src="images/photos/snorkeling-card-reef.webp" alt="Снорклинг над коралловым рифом" width="1369" height="1149"
             loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/photos/snorkeler.jpg'">
         </picture>
         <div class="svc-card-overlay"></div>
@@ -2364,7 +2364,7 @@ document.addEventListener('click', function(e){
       <!-- КУРСЫ ДЛЯ НОВИЧКОВ -->
       <a class="svc-card course-svc" href="#courses" aria-label="Курсы дайвинга для новичков">
         <img src="images/photos/diver-bubbles.jpg" alt="Курсы дайвинга для новичков" width="1080" height="720"
-          loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/dive1.png'">
+          loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/dive1.webp'">
         <div class="svc-card-overlay"></div>
         <div class="svc-card-body">
           <span class="svc-tag course">
@@ -2385,7 +2385,7 @@ document.addEventListener('click', function(e){
       <!-- КУРСЫ ДЛЯ ПРОФЕССИОНАЛОВ -->
       <a class="svc-card pro-svc" href="#courses" aria-label="Профессиональные курсы дайвинга">
         <img src="images/photos/diver-jellyfish.jpg" alt="Профессиональные курсы дайвинга" width="1080" height="720"
-          loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/dive1.png'">
+          loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/dive1.webp'">
         <div class="svc-card-overlay"></div>
         <div class="svc-card-body">
           <span class="svc-tag pro">
@@ -2443,7 +2443,7 @@ document.addEventListener('click', function(e){
        aria-label="Открыть Hon Mun Marine Protected Area в Google Maps">
       <div class="map-title">Где проходит погружение</div>
       <div class="map-visual">
-        <img src="images/map.PNG" alt="Маршрут из Нячанга к острову Мун — Hon Mun Marine Protected Area" width="1536" height="1024" loading="lazy">
+        <img src="images/map.webp" alt="Маршрут из Нячанга к острову Мун — Hon Mun Marine Protected Area" width="1536" height="1024" loading="lazy">
       </div>
       <div class="map-footer">
         <span class="map-badge">
@@ -2579,7 +2579,7 @@ document.addEventListener('click', function(e){
       <!-- левая колонка: большое фото -->
       <div class="snork-photo">
         <picture>
-          <img src="images/photos/nha-trang-snorkeling-boat-reef.png" alt="Снорклингист над рифом у лодки в Нячанге" width="1024" height="1536"
+          <img src="images/photos/nha-trang-snorkeling-boat-reef.webp" alt="Снорклингист над рифом у лодки в Нячанге" width="1024" height="1536"
             loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/photos/snorkeler.jpg'">
         </picture>
       </div>
@@ -2805,7 +2805,7 @@ document.addEventListener('click', function(e){
     <p class="lead reveal d1">Кадры из реальных программ у острова Мун — без постановки и фотошопа.</p>
     <div class="gal-grid">
       <figure class="gal-item reveal">
-        <img src="images/photos/diver-heart.jpg" alt="Дайвер показывает сердечко под водой" width="2731" height="4096" loading="lazy" decoding="async">
+        <img src="images/photos/diver-heart.webp" alt="Дайвер показывает сердечко под водой" width="2731" height="4096" loading="lazy" decoding="async">
         <figcaption class="cap">Виктор и его гости — настоящий знак качества</figcaption>
       </figure>
       <figure class="gal-item reveal d1">
@@ -2821,7 +2821,7 @@ document.addEventListener('click', function(e){
         <figcaption class="cap">В окружении стаи рыб</figcaption>
       </figure>
       <figure class="gal-item reveal d1">
-        <img src="images/photos/от%20вити/2.PNG" alt="Дайвер над огненным кораллом" width="1024" height="1536" loading="lazy" decoding="async">
+        <img src="images/photos/от%20вити/2.webp" alt="Дайвер над огненным кораллом" width="1024" height="1536" loading="lazy" decoding="async">
         <figcaption class="cap">Дайвер над огненным кораллом</figcaption>
       </figure>
       <figure class="gal-item reveal d2">
@@ -2886,7 +2886,7 @@ document.addEventListener('click', function(e){
     <div class="rev-grid">
       <article class="rev-card rev-featured glass reveal">
         <a class="rev-vid" href="https://www.instagram.com/p/DPGaZtNk4oG/" target="_blank" rel="noopener noreferrer" aria-label="Смотреть видео-отзыв Анастасии Ивлеевой в Instagram">
-          <img src="images/photos/раздел%20под%20водой/ivleevaanastasia.png" alt="Анастасия Ивлеева — дайвинг с Victor DivePro в Нячанге" width="1448" height="1086" loading="lazy" decoding="async">
+          <img src="images/photos/раздел%20под%20водой/ivleevaanastasia.webp" alt="Анастасия Ивлеева — дайвинг с Victor DivePro в Нячанге" width="1448" height="1086" loading="lazy" decoding="async">
           <span class="rev-vid-play" aria-hidden="true">▶</span>
           <span class="rev-vid-badge">Видео-отзыв в Instagram</span>
         </a>
@@ -3016,7 +3016,7 @@ document.addEventListener('click', function(e){
     </svg>
   </div>
   <a class="logo" href="#hero">
-    <span class="logo-mark"><picture><source media="(max-width: 640px)" srcset="images/logo-oval.png"><img src="images/logo-oval.png" alt="Victor DivePro" width="1448" height="1086"></picture></span>
+    <span class="logo-mark"><picture><source media="(max-width: 640px)" srcset="images/logo-oval.webp"><img src="images/logo-oval.webp" alt="Victor DivePro" width="1448" height="1086"></picture></span>
     <span class="logo-text"><span>VICTOR&nbsp;DIVEPRO</span><span class="logo-sub">Нячанг · Дайвинг</span></span>
   </a>
   <div class="foot-links">
@@ -3082,6 +3082,7 @@ document.addEventListener('click', function(e){
   window.vdpUpdateMessengerLinks = updateMessengerLinks;
   updateMessengerLinks();
 
+  window.vdpYmCounterId = 109054362;
   window.dataLayer = window.dataLayer || [];
   function eventLocation(el){
     var scope = el.closest('section[id], header, footer, #dock, #mobileNav');

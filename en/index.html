@@ -146,9 +146,9 @@
 // Metrika goals: contact button clicks
 document.addEventListener('click', function(e){
   var a = e.target.closest && e.target.closest('a'); if(!a) return;
-  var h = a.href || '';
-  if (h.indexOf('wa.me') > -1) { ym(109054362,'reachGoal','wa_click'); }
-  else if (h.indexOf('t.me') > -1) { ym(109054362,'reachGoal','tg_click'); }
+  var h = a.href || '', c = a.className || '';
+  if (h.indexOf('wa.me') > -1 || c.indexOf('js-wa') > -1) { ym(109054362,'reachGoal','wa_click'); ym(109054362,'reachGoal','lead'); }
+  else if (h.indexOf('t.me') > -1 || c.indexOf('js-tg') > -1) { ym(109054362,'reachGoal','tg_click'); ym(109054362,'reachGoal','lead'); }
   else if (h.indexOf('instagram.com') > -1) { ym(109054362,'reachGoal','ig_click'); }
 }, true);
 </script>
@@ -158,7 +158,7 @@ document.addEventListener('click', function(e){
 <div class="page">
   <header class="top">
     <a class="logo" href="/en/">
-      <img src="/images/logo-oval.png" alt="Victor DivePro — Nha Trang diving center" width="1448" height="1086" />
+      <img src="/images/logo-oval.webp" alt="Victor DivePro — Nha Trang diving center" width="1448" height="1086" />
     </a>
     <a class="lang" href="/">RU — Русская версия</a>
   </header>
@@ -176,7 +176,7 @@ document.addEventListener('click', function(e){
     <span>★ 5.0 on Google</span><span>11 years of experience</span><span>SSI certified</span><span>15,600+ dives with guests</span>
   </div>
 
-  <img class="photo" src="/images/photos/nha-trang-snorkeling-boat-reef.png" alt="Snorkeling over a coral reef near the boat in Nha Trang" width="1536" height="1024" loading="lazy" />
+  <img class="photo" src="/images/photos/nha-trang-snorkeling-boat-reef.webp" alt="Snorkeling over a coral reef near the boat in Nha Trang" width="1024" height="1536" fetchpriority="high" decoding="async" />
 
   <section id="programs">
     <h2>Dive programs</h2>
